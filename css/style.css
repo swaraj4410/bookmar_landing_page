@@ -1,0 +1,254 @@
+body {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;transition: all .5s;
+}
+ * {
+     box-sizing: border-box;
+ }
+ .navbardisplay {
+     display: flex;
+     flex-direction: column;
+     background-color: rgba(0,0, 0, 0.8);
+     text-align: center;
+     align-items: center;
+    justify-content: space-evenly;
+     width: 100%;
+     height: 100vh;
+     color: white;
+     position: absolute;
+     top: -10000px;
+}
+.navbardisplay > * {color:white; text-decoration: none; }
+.navbardisplay>*:hover {transform: translateY(5px) scale(1.5); cursor: pointer;}
+.navbardisplay button { border: none; background: whitesmoke; border-radius: 5px; color: salmon;}
+ .displayflex {
+            position: relative ;
+            top:10px;
+            }
+
+ .navbar {
+     display: flex;
+     justify-content: space-around;
+     margin-right: 10px;
+}
+.navbar img:hover {cursor: pointer;}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+}
+.flex-container .flex-item {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+.flex-container .login-button {
+    background: hsl(0, 94%, 66%);
+    border: none;
+    width: 20%; border-radius: 5px ; color: whitesmoke;
+}
+.flex-container .login-button:hover {
+    cursor: pointer;
+}
+
+/* section starts here */
+.section-top {
+    margin: 50px auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 100px;
+}
+.section-item {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex: 1 1 50%;
+    justify-content: flex-start;
+}
+.section-item img {
+    width: 100%;
+}
+.section-top h2 {
+    font-size: 2.3em;
+    margin: 60px auto 30px 0;
+}
+.section-top p {
+    font-size: 1.5em;
+    margin-bottom: 50px;
+    
+}
+.section-top .section-button-flex {
+   display: flex;
+    justify-content: space-around;
+    height: 40px;
+}
+.section-button-flex .section-button-item {
+    background: none;
+    border-radius: 3px;
+    background-color: rgb(58, 58, 221);
+    color: white;
+    width: 40%;
+    box-shadow: 1px 1px 10px gray;
+    border: none;
+}
+.section-button-flex .section-button-item:hover {cursor: pointer;}
+.section-button-flex .second {
+    background-color: rgb(238, 222, 222);
+    color: black;
+}
+
+
+/* features section starts */
+.features {
+    width: 60%;
+    margin: 20px auto;
+    text-align: center;
+}
+.features h2 {font-size: 1.9em;}
+.features p {font-size: 1.3em;}
+.features .option-container {display: flex;}
+.features .option-container>* {flex: 1 1 33%; font-size: 1.3em; border-bottom: .8px solid gray;}
+.features .option-container> .one {border-bottom: 2px solid salmon;}
+
+/* middle section starts here */
+.middle {display: flex; width:80% ; margin: 80px auto; justify-content: space-between;}
+.middle-item img {max-width: 90%;}
+.middle-item {
+    display: flex; flex-direction: column; flex-basis: 60%;
+    justify-content: center; align-items: center;
+}
+.middle-item h2 {font-size: 1.9em; }
+.middle-item p {font-size: 1.3em;}
+.middle-item button {border: none; background:rgb(58, 58, 221); color: white; flex-basis: 10%; min-width: 30%;
+border-radius: 5px; }
+.download .download-header {width: 50%; margin: 20px auto; text-align: center;}
+.download .download-header h2 {font-size: 1.9em;}
+.download .download-header p {font-size: 1.3em;}
+.download .download-items {display: flex;  width: 80%; margin:30px auto; justify-content: space-around;
+                              align-items: center;  flex-wrap: wrap;}
+
+.download-items .items { flex-basis: 30%; border: none; box-shadow: 0 0 3px 3px rgb(223, 217, 217);
+                border-radius: 5px; display: flex; flex-direction: column; justify-content: space-between;
+}
+/* positioning of the flex-items */
+/* .download-items .second {margin-top: 30px;}
+.download-items .third {margin-top: 60px;} */
+
+
+.download-items .first {align-self: flex-start;}
+.download-items .second {align-self: center;}
+.download-items .third {align-self: flex-end;}
+
+
+
+.download-items .items>.top-area {border-bottom: 4px dotted gray;  padding: 20px;}
+.download-items .items>* {text-align: center;}
+ .item-button>button {margin: 5px auto; border: 1px solid white; background:rgb(58, 58, 221); color: white; height: 100%;
+                    width: 50%; border-radius: 3px; margin-bottom: 10px; align-self: stretch; padding: 10px; }
+ .item-button>button:hover {cursor: pointer; background:none; color:rgb(58, 58, 221);
+     border: 1px solid rgb(58, 58, 221);
+}
+
+/* qusrtion section starts */
+
+.questions {
+    margin: 100px auto;
+    width: 50%;
+    text-align: center;
+}
+
+.questions h2 {font-size: 1.9em;}
+.questions >p {font-size: 1.3em; width: 75%; margin: 10px auto;}
+.questions .grid-container {
+    display: grid;     grid-template-columns: 1fr;
+}
+.questions .grid-container .grid-items {
+    display: grid;
+   grid-template-columns: 10fr 1fr;  
+   align-items: center; 
+   text-align: left;
+}
+.questions .grid-container .grid-items img {cursor: pointer;}
+.questions button {
+    border: none; background:rgb(58, 58, 221) ;width: 30%; margin: 50px auto; 
+color: white; border-radius: 3px; padding: 10px;
+}
+.questions button:hover {cursor: pointer;}
+
+.cover {background:rgb(90, 92, 250); }
+.footer .top {
+    color: white;
+    width: 60%;
+    margin: 20px auto; text-align: center; padding: 10px; margin-bottom: 0;
+}
+.footer .top .two {font-size: 1.4em; }
+.footer .section-form {display: grid; grid-template-columns: 6fr 4fr; grid-template-rows:30px; gap: 3em;}
+ .footer .top div.section-form input {  border-radius: 5px; border: none; justify-self: flex-end; }
+  .footer .top div.section-form button {justify-self: flex-start; background: salmon; border: none;
+                                            border-radius: 5px; color: white;}
+.footer .top div.section-form button:hover {cursor: pointer; background: white; color: salmon;}
+
+.section-bottom { 
+    display: flex;
+     justify-content: space-around;
+     
+     padding-bottom: 15px;
+     background: rgb(30, 30, 78);
+     color: white;
+    }
+    .section-bottom .flex-item {color: white; align-items: flex-end;}
+    .section-bottom img {background: white;}
+    .hamburger {display: none;}
+
+    @media (max-width:600px) {
+        .navbar .flex-container {
+      display: none;
+        }
+        .navbar .hamburger {display: inline;}
+
+     main {display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+        .section-top {
+            flex-direction: column;
+            margin: 10px auto;
+            padding: 10px;
+            text-align: center;
+        }
+        .section-top .section-item-img {
+            order:-2;
+        }
+    
+        .features {
+            width: 90%;
+        }
+        .features .option-container { flex-direction: column;}
+        .features .option-container >* {padding: 5px;}
+        .features .option-container .one {border-top: .8px solid gray;}
+        .features .option-container >*:hover {cursor: pointer;}
+
+        .middle {flex-direction: column;}
+        .middle button {width: 60%; padding: 10px;}
+        .middle .middle-item h2{margin-bottom: 0;}
+        .middle  {margin: 25px auto; width: 90%;}
+
+        .download .download-header {width: 90%; }
+        .download .download-items {flex-direction: column;}
+        .download .download-items .items {width: 80%;  align-self: center; margin-bottom: 30px;}
+
+        .questions { width: 90%; }
+        .footer .top .section-form {grid-template-columns: 1fr; grid-template-rows: 1.5rem 2rem; gap: 1rem;
+                    justify-content: center;}
+        .footer .top .section-form > input {width: 100%;}
+         .footer .top div.section-form button {justify-self: center;}
+         .section-bottom .flex-container {display: none;}
+    }
+   
+
+
+    .displayflex {display: flex;}
